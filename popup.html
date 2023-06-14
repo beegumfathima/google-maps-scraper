@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps Web Scraper</title>
+  <script src="xlsx.full.min.js"></script>
+</head>
+<body>
+  <h1>Google Maps Web Scraper</h1>
+  <button id="scrapeButton">Scrape Data</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const scrapeButton = document.getElementById('scrapeButton');
+
+      if (scrapeButton) {
+        scrapeButton.addEventListener('click', () => {
+          // Call the scraping function here
+          // ...
+          console.log('Scraping data...');
+        });
+      } else {
+        console.error('Scrape button not found');
+      }
+    });
+  </script>
+</body>
+</html>
+
