@@ -1,0 +1,7 @@
+// This script handles the popup.html UI interactions
+
+// Attach a click event listener to the scrape button
+document.getElementById('scrapeButton').addEventListener('click', function() {
+  // Send a message to the background script to start scraping
+  chrome.runtime.sendMessage({ action: 'startScraping' });
+});
